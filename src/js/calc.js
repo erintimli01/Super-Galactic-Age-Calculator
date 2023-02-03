@@ -28,7 +28,7 @@ venusYears() {
 }
 
 marsYears() {
-  let marsAge = this.age * 1.88;
+  let marsAge = this.age / 1.88;
   if(this.age !==0 ) {
     return marsAge;
   } else { 
@@ -37,7 +37,7 @@ marsYears() {
 }
 
 jupiterYears() {
-  let jupiterAge = this.age * 11.86;
+  let jupiterAge = this.age / 11.86;
   if(this.age !== 0) {
     return jupiterAge;
   } else {
