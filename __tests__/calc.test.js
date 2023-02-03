@@ -78,4 +78,9 @@ test('Should return sum of earth years', () => {
   expect(planet.futureEarthYears()).toEqual(42);
 });
 
+test('Should calculate how many years until next birthday on Mercury', () => {
+  const planet = new Planet(56, " ", " ", " ", " ", 43, " ", " ");
+  expect(planet.mercuryFuture()).toEqual(54.16666666666667);
+});
+
 });
