@@ -74,8 +74,8 @@ test('Should calculate how many years have passed on Jupiter since a past birthd
 });
 
 test('Should return sum of earth years', () => {
-  const planet = new Planet(32, " ", " ", " ", " ", 10);
-  expect(planet.pastEarthYears()).toEqual(22);
+  const planet = new Planet(32, " ", " ", " ", " ", " ", " ", " ", " ", " ", 10);
+  expect(planet.futureEarthYears()).toEqual(42);
 });
 
 });
