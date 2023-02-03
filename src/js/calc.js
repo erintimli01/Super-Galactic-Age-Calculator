@@ -1,9 +1,10 @@
 export default class Planet {
-  constructor(age, mercuryAge, venusAge, marsAge) {
+  constructor(age, mercuryAge, venusAge, marsAge, jupiterAge) {
   this.age = age;
   this.mercuryAge = mercuryAge;
   this.venusAge = venusAge;
   this.marsAge = marsAge;
+  this.jupiterAge = jupiterAge;
 
   // thisMercuryYears = Math.floor(this.age / .24);
   }
@@ -35,7 +36,15 @@ marsYears() {
   }
 }
 
+jupiterYears() {
+  let jupiterAge = this.age * 11.86;
+  if(this.age !== 0) {
+    return jupiterAge;
+
+  }
+  }
 }
+
 
 
 
