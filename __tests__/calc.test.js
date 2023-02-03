@@ -12,7 +12,7 @@ test('Should correctly calculate a users age in Mercury years', () => {
   expect(planet.mercuryYears()).toEqual(133.33333333333334);
 }); //passed but not full line coverage without below test to account for 0
 
-test("Should return 0 if age is 0", () => {
+test('Should return 0 if age is 0', () => {
   const planet = new Planet(0);
   expect(planet.mercuryYears()).toEqual(0);
 });
@@ -22,7 +22,7 @@ test('Should correctly calculate a users age in Venus years', () => {
   expect(planet.venusYears()).toEqual(51.612903225806456);
 }); //passed but not full line coverage without below test to account for 0
 
-test("Should return 0 if age is 0", () => {
+test('Should return 0 if age is 0', () => {
   const planet = new Planet(0);
   expect(planet.venusYears()).toEqual(0);
 });
@@ -32,7 +32,7 @@ test('Should correctly calculate a users age in Mars years', () => {
   expect(planet.marsYears()).toEqual(17.02127659574468);
 }); //passed but not full line coverage without below test to account for 0
 
-test("Should return 0 if age is 0", () => {
+test('Should return 0 if age is 0', () => {
   const planet = new Planet(0);
   expect(planet.marsYears()).toEqual(0);
 }); 
@@ -42,10 +42,14 @@ test('Should correctly calculate a users age in Jupiter years', () => {
   expect(planet.jupiterYears()).toEqual(2.69814502529511);
 }); //passed but not full line coverage without below test to account for 0
 
-test("Should return 0 if age is 0", () => {
+test('Should return 0 if age is 0', () => {
   const planet = new Planet(0);
   expect(planet.jupiterYears()).toEqual(0);
 });
 
+test('Should calculate how many years have passed on Mercury since a past birthday', () => {
+  const planet = new Planet(0);
+  expect(planet.mercuryPast()).toEqual(0);
+});
 
 });
