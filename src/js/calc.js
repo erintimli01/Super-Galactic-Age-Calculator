@@ -1,11 +1,13 @@
 export default class Planet {
-  constructor(age, mercuryAge, venusAge, marsAge, jupiterAge, mercPast) {
+  constructor(age, mercuryAge, venusAge, marsAge, jupiterAge, pastAge) {
     this.age = age;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
     this.jupiterAge = jupiterAge;
-    this.mercPast = mercPast;
+    this.pastAge = pastAge;
+
+  
 }
 
 mercuryYears() {
@@ -44,7 +46,10 @@ jupiterYears() {
   }
 }
 
-pastEarth {}
+pastEarthYears() {
+  let pastYears = this.age - this.pastAge;
+  return pastYears
+}
 
 // mercuryPast() {
 //   let mercPast = ((this.age - this.age) /.24);
@@ -52,13 +57,4 @@ pastEarth {}
 //     return mercPast;
 //   }
 // }
-
 }
-
-
-
-
-
-
-  
-

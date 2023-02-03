@@ -48,8 +48,8 @@ test('Should return 0 if age is 0', () => {
 });
 
 test('Should return difference of Earth years', () => {
-  const planet = new Planet(0);
-  expect(planet.pastEarth()).toEqual(0);
+  const planet = new Planet(32, " ", " ", " ", " ", 10);
+  expect(planet.pastEarthYears()).toEqual(22);
 });
 
 
