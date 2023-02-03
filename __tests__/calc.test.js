@@ -70,7 +70,7 @@ test('Should calculate how many years have passed on Mars since a past birthday'
 
 test('Should calculate how many years have passed on Jupiter since a past birthday', () => {
   const planet = new Planet(56, " ", " ", " ", " ", 43);
-  expect(planet.jupiPast()).toEqual(1.09);
+  expect(planet.jupiterPast()).toEqual(1.0961214165261384);
 });
 
 });
