@@ -4,7 +4,7 @@
 
 #### By _Erin Timlin_
 
-#### _This project is serving as a template respository for future work_
+#### __
 
 ## Technologies Used
 
