@@ -29,7 +29,12 @@ test("Should return 0 if age is 0", () => {
 
 test('Should correctly calculate a users age in Mars years', () => {
   const planet = new Planet(32);
-  expect(planet.marsYears()).toEqual(51.612903225806456);
+  expect(planet.marsYears()).toEqual(60.16);
+});
+
+test("Should return 0 if age is 0", () => {
+  const planet = new Planet(0);
+  expect(planet.marsYears()).toEqual(0);
 });
 
 })
