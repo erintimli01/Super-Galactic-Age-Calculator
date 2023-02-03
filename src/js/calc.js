@@ -40,10 +40,12 @@ jupiterYears() {
   let jupiterAge = this.age * 11.86;
   if(this.age !== 0) {
     return jupiterAge;
-
-  }
+  } else {
+    return this.age
   }
 }
+  }
+
 
 
 

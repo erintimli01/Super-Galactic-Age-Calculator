@@ -44,7 +44,7 @@ test('Should correctly calculate a users age in Jupiter years', () => {
 
 test("Should return 0 if age is 0", () => {
   const planet = new Planet(0);
-  expect(planet.marsYears()).toEqual(0);
+  expect(planet.jupiterYears()).toEqual(0);
 }); 
 
 })
