@@ -7,14 +7,19 @@ test('Should correctly create a Planet object with an age property', () => {
   expect(planet.age).toEqual(32);
 }); //passed 100% line coverage
 
-test('should correctly calculate a users age in mercury years', () => {
+test('Should correctly calculate a users age in Mercury years', () => {
   const planet = new Planet(32)
   expect(planet.mercuryYears()).toEqual(133.33333333333334);
 }); //passed but not full line coverage without below test
 
-test("should return 0 if age is 0", () => {
+test("Should return 0 if age is 0", () => {
   const planet = new Planet(0);
   expect(planet.mercuryYears()).toEqual(0);
 });
+
+test('Should correctly calculate a users age in Venus years', () => {
+  const planet = new Planet(32);
+  expect(planet.venusYears()).toEqual(51.61290322580645);
+})
 
 })
