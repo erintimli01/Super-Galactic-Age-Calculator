@@ -54,13 +54,18 @@ test('Should return difference of Earth years', () => {
 
 
 test('Should calculate how many years have passed on Mercury since a past birthday', () => {
-  const planet = new Planet(56, " ", " ", " ", " ", 43);
+  const planet = new Planet(56, " ", " ", " ", " ", 43, " ", " ");
   expect(planet.mercuryPast()).toEqual(54.16666666666667);
 });
 
 test('Should calculate how many years have passed on Venus since a past birthday', () => {
   const planet = new Planet(56, " ", " ", " ", " ", 43);
-  expect(planet.VenusPast()).toEqual(8.06);
-});
+  expect(planet.venusPast()).toEqual(20.967741935483872);
+}); 
+
+// test('Should calculate how many years have passed on Mars since a past birthday', () => {
+//   const planet = new Planet(56, " ", " ", " ", " ", 43);
+//   expect(planet.marsPast()).toEqual(6.914893617021277);
+// });
 
 });
