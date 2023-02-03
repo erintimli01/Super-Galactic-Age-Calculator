@@ -63,9 +63,9 @@ test('Should calculate how many years have passed on Venus since a past birthday
   expect(planet.venusPast()).toEqual(20.967741935483872);
 }); 
 
-// test('Should calculate how many years have passed on Mars since a past birthday', () => {
-//   const planet = new Planet(56, " ", " ", " ", " ", 43);
-//   expect(planet.marsPast()).toEqual(6.914893617021277);
-// });
+test('Should calculate how many years have passed on Mars since a past birthday', () => {
+  const planet = new Planet(56, " ", " ", " ", " ", 43);
+  expect(planet.marsPast()).toEqual(6.914893617021277);
+});
 
 });
