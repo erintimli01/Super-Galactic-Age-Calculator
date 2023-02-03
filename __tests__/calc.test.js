@@ -5,7 +5,7 @@ describe('Planet', () => {
 test('Should correctly create a Planet object with an age property', () => {
   const planet = new Planet(32);
   expect(planet.age).toEqual(32);
-}); //passed
+}); //passed 100% line coverage
 
 test('should correctly calculate a users age in mercury years', () => {
   const planet = new Planet(32)

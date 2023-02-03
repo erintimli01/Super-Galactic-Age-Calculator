@@ -10,9 +10,14 @@ mercuryYears() {
   let mercuryAge = this.age / .24;
   if((this.age !== 0) && (mercuryAge = this.age / .24)) {
     return mercuryAge;
+  } else {
+    return this.age;
   }
+}
+
+
+
 }
 
   
 
-}
