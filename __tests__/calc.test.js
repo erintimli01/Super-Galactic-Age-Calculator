@@ -74,13 +74,13 @@ test('Should calculate how many years have passed on Jupiter since a past birthd
 });
 
 test('Should return sum of earth years', () => {
-  const planet = new Planet(32, " ", " ", " ", " ", " ", " ", " ", " ", " ", 10);
-  expect(planet.futureEarthYears()).toEqual(42);
+  const planet = new Planet(10, " ", " ", " ", " ", " ", " ", " ", " ", " ", 32);
+  expect(planet.futureEarthYears()).toEqual(22);
 });
 
-test('Should calculate how many years until next birthday on Mercury', () => {
-  const planet = new Planet(56, " ", " ", " ", " ", 43, " ", " ");
-  expect(planet.mercuryFuture()).toEqual(54.16666666666667);
-});
+// test('Should calculate how many years until next birthday on Mercury', () => {
+//   const planet = new Planet(56, " ", " ", " ", " ", 61, " ", " ");
+//   expect(planet.mercuryFuture()).toEqual(20.83);
+// });
 
 });

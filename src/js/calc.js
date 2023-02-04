@@ -77,9 +77,14 @@ jupiterPast() {
 }
 
 futureEarthYears() {
-  let futureYears = this.age + this.futureAge;
+  let futureYears = this.futureAge - this.age
   return futureYears;
 }
+
+// mercuryFuture() {
+//   let mercPast = ((this.age + this.pastAge) /.24);
+//     return mercPast;
+//   }
 
 }
 
