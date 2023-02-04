@@ -78,9 +78,9 @@ test('Should return difference of future age from age', () => {
   expect(planet.futureEarthYears()).toEqual(22);
 });
 
-// test('Should calculate how many years until next birthday on Mercury', () => {
-//   const planet = new Planet(56, " ", " ", " ", " ", 61, " ", " ");
-//   expect(planet.mercuryFuture()).toEqual(20.83);
-// });
+test('Should calculate how many years until next birthday on Mercury', () => {
+  const planet = new Planet(56, " ", " ", " ", " ", 61, " ", " ");
+  expect(planet.mercuryFuture()).toEqual(20.83);
+});
 
 });
