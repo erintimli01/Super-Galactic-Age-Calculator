@@ -81,10 +81,11 @@ futureEarthYears() {
   return futureYears;
 }
 
-mercuryFuture() {
-  let mercPast = ((this.futureYears - this.age) /.24);
-    return mercPast;
-  }
+//WIP
+// mercuryFuture() {
+//   let mercPast = ((this.futureYears - this.age) /.24);
+//     return mercPast;
+//   }
 
 }
 
