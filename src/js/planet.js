@@ -14,7 +14,7 @@ export default class Planet {
     this.futureYears = futureYears;
     this.mercFuture = mercFuture;
     this.venuFuture = venuFuture;
-    //this.marfuture = marfuture;
+    this.marfuture = marfuture;
 
   
 }
@@ -95,10 +95,10 @@ venusFuture() {
   return venuFuture;
 }
 
-// marsFuture() {
-//   let marFuture = ((this.futureYears - this.age) /1.88);
-//   return marFuture
-//   }
+marsFuture() {
+  let marFuture = ((this.futureYears - this.age) /1.88);
+  return marFuture
+  }
 
 }
 
