@@ -1,4 +1,4 @@
-import Planet from '../src/js/calc.js';
+import Planet from '../src/js/planet.js';
 
 describe('Planet', () => {
 
@@ -79,10 +79,10 @@ test('Should return difference of future age from age', () => {
 });
 
 //WIP
-// test('Should calculate how many years until next birthday on Mercury', () => {
-//   const planet = new Planet(56, " ", " ", " ", " ", " ", " ", " ", " ", 61, " ");
-//   expect(planet.mercuryFuture()).toEqual(20.83);
-// });
+test('Should calculate how many years until next birthday on Mercury', () => {
+  const planet = new Planet(56, " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", 61, " ", " ");
+  expect(planet.mercuryFuture()).toEqual(20.833333333333336);
+});
 
 // test('Should calculate how many years until next birthday on Venus', () => {
 //   const planet = new Planet(56, " ", " ", " ", " ", " ", " ", " ", " ", " ", 61);
