@@ -51,7 +51,7 @@ _Project objectives:_
 
 - _No known bugs_
 - _Currently no UI_
-- _Years yet to pass until a future birthday not complete_
+- _Working on refactor for DRYer code_
 
 - _Please reach out with any found bugs, questions, or concerns at (erintimlin@gmail.com)_
 
