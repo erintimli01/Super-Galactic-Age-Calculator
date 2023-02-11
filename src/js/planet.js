@@ -1,5 +1,5 @@
 export default class Planet {
-  constructor(age, mercuryAge, venusAge, marsAge, jupiterAge, pastAge, mercPast, venuPast, marPast, jupiPast, futureAge, futureYears, mercFuture, venuFuture) {
+  constructor(age, mercuryAge, venusAge, marsAge, jupiterAge, pastAge, mercPast, venuPast, marPast, jupiPast, futureAge, futureYears, mercFuture, venuFuture, marfuture) {
     this.age = age;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
@@ -14,6 +14,7 @@ export default class Planet {
     this.futureYears = futureYears;
     this.mercFuture = mercFuture;
     this.venuFuture = venuFuture;
+    //this.marfuture = marfuture;
 
   
 }
@@ -84,21 +85,20 @@ futureEarthYears() {
   return futureYears;
 }
 
-//WIP
 mercuryFuture() {
   let mercFuture = ((this.futureYears - this.age) /.24);
   return mercFuture
   }
 
-// mercuryFuture() {
-//   let mercFuture = ((this.pastAge / .24) - this.futureAge);
-//   return mercFuture
-//   }
+venusFuture() {
+  let venuFuture = ((this.futureYears - this.age) /.62);
+  return venuFuture;
+}
 
-// venusFuture() {
-//   let venuFuture = ((this.futureAge - this.age) /.62);
-//   return venuFuture;
-// }
+// marsFuture() {
+//   let marFuture = ((this.futureYears - this.age) /1.88);
+//   return marFuture
+//   }
 
 }
 
