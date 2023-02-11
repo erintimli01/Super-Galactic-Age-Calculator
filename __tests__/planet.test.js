@@ -91,9 +91,12 @@ test('Should calculate how many years until next birthday on Venus', () => {
 
 test('Should calculate how many years until next birthday on Mars', () => {
     const planet = new Planet(56, " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", 61, " ", " ");
-    expect(planet.marsFuture()).toEqual(2.65);
+    expect(planet.marsFuture()).toEqual(2.6595744680851063);
 });
 
-
+test('Should calculate how many years until next birthday on Jupiter', () => {
+  const planet = new Planet(56, " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", 61, " ", " ", " ");
+  expect(planet.jupiterFuture()).toEqual(0.42);
+});
 
 });
